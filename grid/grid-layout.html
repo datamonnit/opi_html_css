@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout</title>
+
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-template-rows: 40px auto;
+        grid-gap: 10px;
+        background-color: rgb(100,100,250);
+        padding: 10px;
+    }
+    .container > div {
+        background-color: rgb(100,200,255);
+    }
+    .left-menu {
+        grid-row: 1/3;
+        padding: 10px;
+    }
+.top1, .top2 {
+    height: 2em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>Select 1</li>
+                <li>Select 2</li>
+                <li>Select 3</li>
+                <li>Select 4</li>
+                <li>Select 5</li>
+            </ul>
+
+        </div>
+        <div class="top1">Top 1</div>
+        <div class="top2">Top 2</div>
+        <div class="content1">Content 1</div>
+        <div class="content2">Content 2</div>
+    </div>
+</body>
+</html>
